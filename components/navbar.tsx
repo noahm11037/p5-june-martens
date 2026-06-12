@@ -12,10 +12,10 @@ import {
 } from "@heroui/navbar";
 import { Link } from "@heroui/link";
 import NextLink from "next/link";
+import { Image } from "@heroui/image";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -29,7 +29,11 @@ export const Navbar = () => {
       <NavbarContent justify="start">
         <NavbarBrand>
           <NextLink className="text-sm font-semibold" href="/">
-            logo
+            <Image
+              alt="cat"
+              src="https://thf.bing.com/th/id/OIP.WqqccCGP2Xu2nQl_TugL1wHaHa?cb=thfc1falcon2&rs=1&pid=ImgDetMain&o=7&rm=3"
+              width={100}
+            />
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
